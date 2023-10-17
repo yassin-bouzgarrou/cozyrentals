@@ -1,7 +1,4 @@
 # cozyrentals
-
-
-# Project Title
 COZYRENTALS
 
 ## Demo link:
