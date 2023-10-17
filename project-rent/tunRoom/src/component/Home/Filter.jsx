@@ -2,7 +2,7 @@ import React from 'react'
 
 function Filter() {
   return (
-    <div class="flex flex-col p-2 py-6 m-h-screen absolute -bottom-[30px] left-[540px]">
+    <div class="flex flex-col p-2 py-6 m-h-screen absolute -bottom-[30px] left-[540px]" >
     <div class="bg-white  h-12 items-center justify-between w-full flex rounded-full shadow-lg p-2 mb-5 sticky">
       <div>
         <div class="p-2 mr-1 rounded-full hover:bg-gray-100 cursor-pointer">
@@ -27,9 +27,9 @@ function Filter() {
         placeholder="Search"
       />
 
-      <div class="bg-gray-600 p-2 hover:bg-blue-400 cursor-pointer mx-2 rounded-full">
+      <div class=" p-2 bg-black  hover:bg-blue-400 cursor-pointer mx-2 rounded-full">
         <svg
-          class="w-6 h-6 text-white"
+          class="w-6 h-6 text-white  "
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"

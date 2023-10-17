@@ -96,7 +96,7 @@ const navigate = useNavigate();
 
                           )}
                         >
-                          Settings
+                         U want To Rent housse ?
                         </a>
                       )}
                     </Menu.Item>
