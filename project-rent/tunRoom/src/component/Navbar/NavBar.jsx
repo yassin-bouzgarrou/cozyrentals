@@ -27,7 +27,7 @@ const navigate = useNavigate();
         <div class="">
           <div class="flex items-center justify-between py-5">
             <div>
-              <p className="font-semibold text-white ">COZYRENTALS</p>
+              <p className="font-semibold text-white ml-4 ">COZYRENTALS</p>
             </div>
 
             <div class="hidden sm:flex sm:items-center">
@@ -60,18 +60,18 @@ const navigate = useNavigate();
             <div class="hidden sm:flex sm:items-center">
               <Menu as="div" className=" ">
                 <div>
-                  <Menu.Button className="relative  flex rounded-full bg-gray-800 text-5xl focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                    <span className="" />
+                  <Menu.Button className="relative  mr-7 flex rounded-full ml-10  bg-gray-800 text-5xl focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+         
                     <span className="sr-only">Open user menu</span>
                     <img
-                      className="h-8 w-8 rounded-full"
+                      className="h-8 w-8 rounded-full "
                       src={userData.profile_picture}
                       alt=""
                     />
                   </Menu.Button>
                 </div>
                 <Transition>
-                  <Menu.Items className="absolute right-0 z-10  w-64 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <Menu.Items className="absolute right-0 z-10    bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <Menu.Item>
                       {({ active }) => (
                      

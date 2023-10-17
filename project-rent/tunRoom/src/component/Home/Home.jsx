@@ -40,7 +40,7 @@ function Home() {
         >
           <div className="flex h-full items-center justify-center">
             <div className="text-white">
-              <h2 className=" text-3xl font-semibold  mt-16 mb-10  font-bigtitle">
+              <h2 className=" text-3xl font-semibold   mt-32   font-bigtitle">
                 FIND YOUR PERFECT VACATION RENTAL{" "}
               </h2>
               <Filter></Filter>
