@@ -23,7 +23,7 @@ Access my site at [google.com](https://google.com)
 
 ## Screenshots
 
-![Cozy Rentals Image](https://i.ibb.co/5nFvFV4/rent.png)
+![Cozy Rentals Image](cozyRentals.PNG)
 
 ## Technologies
 I used `html`, `css`, ...
