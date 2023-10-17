@@ -1,44 +1,47 @@
-
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import {fetchUserData} from "../State/UserAction.js"
 import BlackLogo from "../../assets/img/black.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+
 export function Login() {
   const [email, setemail] = useState("");
   const [passowrd, setpassword] = useState("");
-const navigate = useNavigate()
+
+  const navigate = useNavigate();
+
 
 
   async function login() {
-
     try {
       const token = await axios.post("http://localhost:3000/auth/signin", {
         email: email,
         password: passowrd,
         role: "GUEST",
       });
-      toast.success('Success Notification !', {
-        position: toast.POSITION.TOP_RIGHT
-    });
-      navigate("/");
-            localStorage.setItem("token",token.data.acces_token)
+      toast.success("Success Notification !", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+
+      localStorage.setItem("token", token.data.acces_token);
+ 
+      navigate("/")
 
     } catch (error) {
-   
-    if(error.response.data.message === "your email not valid "){
-      toast.error("Sorry, we didn't recognize that email.", {
-        position: toast.POSITION.TOP_RIGHT
-    })
-    }else{
-      toast.error("Password Incorrect", {
-        position: toast.POSITION.TOP_RIGHT
-    })
+      if (error.response.data.message === "your email not valid ") {
+        toast.error("Sorry, we didn't recognize that email.", {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+      } else {
+        toast.error("Password Incorrect", {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+      }
     }
-    }
-    
   }
   return (
     <>
