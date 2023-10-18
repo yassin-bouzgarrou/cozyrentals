@@ -1,7 +1,4 @@
 # cozyrentals
-
-
-# Project Title
 COZYRENTALS
 
 ## Demo link:
@@ -15,8 +12,7 @@ Access my site at [google.com](https://google.com)
 - [Setup](#setup)
 - [Approach](#approach)
 - [Status](#status)
-- [Credits](#credits)
-- [License](#license)
+
 
 ## About The App
 [Name of project] is an app that ...
@@ -39,11 +35,4 @@ I adopted the `BEM` naming style for my css class names and ...
 ## Status
 [name of project] is still in progress. `Version 2` will be out soon.
 
-## Credits
-List of contriubutors:
-- [John Doe](johndoe.com)
-- [Beginners guide to BEM](link-goes-here.com)
 
-## License
-
-MIT license @ [author](author.com)
